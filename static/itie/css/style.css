@@ -902,9 +902,10 @@ body {
   display: flex;
   /* height: 100%; */
   justify-content: center;
-  /* align-items: center; */
+  align-items: stretch;
   gap: 6%;
-  margin: 2rem 4rem;
+  width: 100%;
+  margin: 2rem auto;
 }
 
 /* FOR CAROUSERL */
@@ -953,6 +954,7 @@ body {
 @media screen and (max-width: 700px) {
   .section-seven .carousel-two {
     flex-direction: column;
+    width: 50%;
   }
 }
 
@@ -960,11 +962,32 @@ body {
   .section-seven .plans {
     /* padding: 10px; */
     width: 100%;
-    margin: 2rem;
+    margin: 2rem auto;
   }
 
   .section-five h2 {
     margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-seven .carousel-two {
+    /* flex-direction: column; */
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-seven .carousel-two {
+    /* flex-direction: column; */
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section-seven .carousel-two {
+    /* flex-direction: column; */
+    width: 100%;
   }
 }
 
@@ -1572,8 +1595,8 @@ body {
   .section-one .button-one {
     margin: 0px;
     padding: 12px;
-    width: 12rem;
-    font-size: 14px;
+    width: 10rem;
+    font-size: 12px;
   }
   .section-one div{
     gap: 14px;
@@ -1581,8 +1604,13 @@ body {
 }
 
 @media (max-width:399px) {
+  .section-two {
+    margin: 4rem 0 4rem 0;
+  }
+  
   .section-two img {
     height: 200px;
+    width: 210px;
   }
 
   .section-two p {
@@ -1594,6 +1622,10 @@ body {
     font-size: 24px;
   }
 
+  .section-two h6 {
+    font-size: 0.83rem;
+  }
+
   .section-two .circle_two,
   .section-two .circle_one {
     display: none;
@@ -1602,6 +1634,7 @@ body {
   .section-two div {
     margin-left: -41px;
     margin-right: -58px;
+    padding: 0px 20px;
   }
 
   @media (max-width:399px) {
@@ -1627,7 +1660,7 @@ body {
     }
 
     .section-three .fa-solid {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -1638,38 +1671,49 @@ body {
   }
 
   @media (max-width:399px) {
+    .section-five {
+      margin-bottom: 1rem;
+    }
+
     .section-five h2 {
-      font-size: 23px;
+      font-size: 20px;
+      margin-bottom: 3rem;
+      padding-top: 1rem;
     }
 
   }
 
   @media (max-width:399px) {
     .amazing_heading {
-      font-size: 30px;
+      width: 100%;
+      font-size: 28px !important;
+      margin-bottom: 2rem !important;
     }
 
     .grab_offer {
       font-size: 16px;
+      width: 80%;
     }
 
     .buy_course {
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: 600;
     }
 
     .percentage {
-      font-size: 2rem;
+      font-size: 2rem !important;
       display: inline;
     }
 
     .off {
-      font-size: 1.5rem;
+      position: relative;
       display: inline;
+      margin-left: 4px;
     }
 
     .amazing_career {
-      width: 132%;
-      margin-left: -38px;
+      width: calc(100% + 120px);
+      margin-left: -60px;
     }
   }
 
@@ -1680,6 +1724,7 @@ body {
 
     .section-seven h2 {
       font-size: 22px;
+      margin-bottom: 2rem;
     }
   }
 
