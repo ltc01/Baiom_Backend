@@ -978,7 +978,7 @@ section.work .contents p {
   section.work p.sub-heading {
     font-size: 15px;
     width: 90vw;
-    text-align: justify;
+    text-align: center;
   }
 
   section.work {
@@ -999,7 +999,7 @@ section.work .contents p {
 
   section.work .contents p {
     font-size: 14px;
-    text-align: justify;
+    text-align: center;
   }
 }
 
@@ -1158,7 +1158,7 @@ section.expert .about h4 {
 
   section.expert .text {
     font-size: 13px;
-    text-align: justify;
+    text-align: center;
   }
 
   section.expert h1 {
@@ -1996,7 +1996,8 @@ list
 
   .section-4 .tab-content-item .tabs-content-subheading,
   .section-4 .tab-content-item .row .list p {
-    font-size: 15px;
+    font-size: 14px;
+
   }
 }
 
@@ -2698,11 +2699,11 @@ list
   .section-3 .horizon .horizon-sub-heading{
     left: 0%;
     font-size: 15px;
-    text-align: justify;
+    text-align: center;
   }
 
   .section-3 .horizon .check{
-    padding-left: 82px;
+    padding-left: 54px;
     padding-top: 18px;
     padding-bottom: 18px;
     border-bottom: none;
@@ -2717,16 +2718,18 @@ list
 
   .section-3 .horizon h2.h22{
     font-size: 26px !important;
-    margin-left: -61px !important; 
-    text-align: center;
+    margin-left: -60px !important; 
+    /* text-align: center; */
     margin-top: -39px;
+    margin-right: 35px;
   }
+
 
   .horizon .queries{
     text-align: center;
     border-bottom: 1.5px solid #949494;
     padding-bottom: 11px;
-    /* margin-left: -18px; */
+    margin-left: 19px;
   }
 
   .section-3 .horizon{
@@ -2740,11 +2743,11 @@ list
 
   .user-image-medium-small {
     width: 336px;
-    /* position: relative !important;
-    right: 10%; */
-    padding-top: 8%;
+    position: relative !important;
+    right: 22%;
+    /* padding-top: 8%;
     display: flex;
-    align-items: center !important;
+    align-items: center !important; */
   }
 
   .mentors-outer-div {
@@ -2757,7 +2760,7 @@ list
   }
 
   #virtue_protocols{
-    margin-left: 16px;
+    margin-left: -9px;
   }
 
   section.startups h5{
@@ -2809,6 +2812,7 @@ list
 
   section.work p.sub-heading{
     margin-top: 30px;
+
   }
 
   /* section.work .contents p{
@@ -2844,6 +2848,7 @@ list
     align-items: center;
     padding: 0px;
     margin:20px 0px;
+    margin-left: 47px;
   }
 
   .list li {
@@ -2861,7 +2866,7 @@ list
   }
 
   .section-4 .tab-content-item .tabs-content-heading{
-    font-size: 27px;
+    font-size: 26px;
     margin-bottom: -24px;
   }
 
@@ -2873,8 +2878,10 @@ list
     /* text-align: center; */
     padding-right: 10px;
     font-size: 26px;
-    padding-top: 4rem;
-    /* padding-bottom: 3rem; */
+    /* padding-top: -2rem;
+    padding-bottom: -2rem; */
+    margin-top: 6rem;
+    margin-bottom: 3rem;
   }
 
   .home-section .row p:not(.about-slide){
@@ -2888,6 +2895,11 @@ list
     font-size: 15px;
   }
 
+  #baoiam_heading{
+    margin-top: 0rem;
+    margin-bottom: -1rem;
+  }
+
   section.startups h5{
     font-size: 28px;
   }
@@ -2897,6 +2909,29 @@ list
     font-size: 19px;
     padding-top: 80px;
   }
+
+  #baoiam_ions{
+    position: relative;
+    right: 16%;
+  }
+
+  #we_are{
+    font-size: 20px !important;
+  }
+
+  .heading2_underline::before{
+    display: none;
+  }
+
+  .home-section .row .col-sm-12.h2-dec p{
+    margin-top: -2px;
+    margin-bottom: 13px;
+  }
+
+  .infoimg {
+    padding-top: 8%;
+    margin-left: 2%;
+}
 
   /* .wrapper img{
     width:80%
@@ -2921,6 +2956,7 @@ list
     margin: 20px;
     text-align: center;
     margin-left: -1rem;
+    margin-bottom: -14px;
   }
 
   .row_first{
