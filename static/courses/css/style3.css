@@ -2157,6 +2157,12 @@ footer p {
     position: relative;
     bottom: 4vh !important;
   }
+  .course-content {
+    line-height: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0px;
+  }
+
   .Right-course {
     margin-top: -10%;
   }
