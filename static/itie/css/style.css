@@ -1798,6 +1798,9 @@ body {
   .section-seven button {
     font-size: 14px;
   }
+  .buy_course_box {
+    padding: 1rem 1.2rem;
+  }
 }
 
 @media (max-width:450px) {
