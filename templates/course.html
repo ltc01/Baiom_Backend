@@ -392,6 +392,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                         <ul class="course-content">
                                           <li>{{ plan.course_features|linebreaks }}</li>
                                         </ul>
+                                    {% elif plan.subscription_plan.name == "Pro" %}
+                                        <ul class="course-content">
+                                        <li>{{ plan.course_features|linebreaks }}</li>
+                                        </ul>
                                     {% endif %}
                                     <div  >
                                     <form id="enroll-form" class="courses-enroll-btn" method="post" action="/subscription/create_purchase_record/">
