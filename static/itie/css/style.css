@@ -20,8 +20,8 @@ body {
 }
 
 .containerr {
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .popup-form {
@@ -356,7 +356,7 @@ body {
   width: 95%;
   font-weight: 500;
   line-height: 1.8;
-  text-align: left;
+  text-align: center;
 }
 
 .section-two h6 {
@@ -375,8 +375,8 @@ body {
 
 .section-two .circle_one {
   position: absolute;
-  top: -80px;
-  right: 130px;
+  top: -100px;
+  right: 80px;
   height: 80px;
   width: 80px;
   background-color: #ff910b73;
@@ -385,8 +385,8 @@ body {
 
 .section-two .circle_two {
   position: absolute;
-  top: 0px;
-  right: 190px;
+  top: -33px;
+  right: 160px;
   height: 40px;
   width: 40px;
   background-color: #ff910b73;
@@ -902,9 +902,10 @@ body {
   display: flex;
   /* height: 100%; */
   justify-content: center;
-  /* align-items: center; */
+  align-items: stretch;
   gap: 6%;
-  margin: 2rem 4rem;
+  width: 100%;
+  margin: 2rem auto;
 }
 
 /* FOR CAROUSERL */
@@ -953,6 +954,7 @@ body {
 @media screen and (max-width: 700px) {
   .section-seven .carousel-two {
     flex-direction: column;
+    width: 50%;
   }
 }
 
@@ -960,7 +962,7 @@ body {
   .section-seven .plans {
     /* padding: 10px; */
     width: 100%;
-    margin: 2rem;
+    margin: 2rem auto;
   }
 
   .section-five h2 {
@@ -968,7 +970,28 @@ body {
   }
 }
 
-.section-seven-content{
+@media screen and (max-width: 600px) {
+  .section-seven .carousel-two {
+    /* flex-direction: column; */
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-seven .carousel-two {
+    /* flex-direction: column; */
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section-seven .carousel-two {
+    /* flex-direction: column; */
+    width: 100%;
+  }
+}
+
+.section-seven-content {
   display: flex;
   flex-direction: column;
 
@@ -1038,7 +1061,7 @@ body {
   align-self: flex-end;
 }
 
-.wep-enroll-btn input{
+.wep-enroll-btn input {
   display: none;
   width: 0px;
 }
@@ -1555,43 +1578,65 @@ body {
   padding-left: 5px;
 }
 
-@media (max-width:399px) {
+@media (max-width:450px) {
   .section-one h1 {
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .section-one h4 {
+  
+    font-size: 16px !important;
+    text-align: center;
+  }
+.section-one div {
+    margin-left: -20px;
+    padding-left: 0px;
+    margin-right: -20px;
   }
 
   .section-one h4 {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .section-one p {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .section-one .button-one {
     margin: 0px;
     padding: 12px;
-    width: 12rem;
-    font-size: 14px;
+    width: 8rem;
+    font-size: 10px;
   }
-  .section-one div{
-    gap: 14px;
+
+  .section-one div {
+    gap: 6px;
   }
 }
 
-@media (max-width:399px) {
+@media (max-width:450px) {
+  .section-two {
+    margin: 2rem 0 2rem 0;
+  }
+
   .section-two img {
     height: 200px;
+    width: 210px;
   }
 
   .section-two p {
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
   }
 
   .section-two h2 {
-    font-size: 24px;
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+
+  .section-two h6 {
+    font-size: 0.83rem;
   }
 
   .section-two .circle_two,
@@ -1600,119 +1645,201 @@ body {
   }
 
   .section-two div {
-    margin-left: -41px;
+    /* margin-left: -41px;
     margin-right: -58px;
+    padding: 0px 20px; */
+  }
+}
+
+@media (max-width:450px) {
+  .section-three h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
   }
 
-  @media (max-width:399px) {
-    .section-three h2 {
-      font-size: 24px;
-    }
-
-    .section-three h4 {
-      font-size: 16px;
-    }
-
-    .section-three p {
-      font-size: 14px;
-    }
-
-    .section-three .divide {
-      width: 70%;
-      font-size: 14px;
-    }
-
-    .section-three {
-      margin: 0 -60px;
-    }
-
-    .section-three .fa-solid {
-      font-size: 2rem;
-    }
+  .section-three h4 {
+    font-size: 16px;
   }
 
-  @media (max-width:399px) {
-    .section-four h2 {
-      font-size: 24px;
-    }
+  .section-three p {
+    font-size: 14px;
   }
 
-  @media (max-width:399px) {
-    .section-five h2 {
-      font-size: 23px;
-    }
-
+  .section-three .divide {
+    width: 70%;
+    font-size: 14px;
   }
 
-  @media (max-width:399px) {
-    .amazing_heading {
-      font-size: 30px;
-    }
-
-    .grab_offer {
-      font-size: 16px;
-    }
-
-    .buy_course {
-      font-size: 16px;
-    }
-
-    .percentage {
-      font-size: 2rem;
-      display: inline;
-    }
-
-    .off {
-      font-size: 1.5rem;
-      display: inline;
-    }
-
-    .amazing_career {
-      width: 132%;
-      margin-left: -38px;
-    }
+  .section-three {
+    margin: 0 -60px;
+    padding-bottom: 2rem;
   }
 
-  @media (max-width:399px) {
-    .section-seven h2 span {
-      font-size: 23px;
-    }
+  .section-three .fa-solid {
+    font-size: 1.5rem;
+  }
+}
 
-    .section-seven h2 {
-      font-size: 22px;
-    }
+@media (max-width:450px) {
+  .section-four h2 {
+    font-size: 22px;
+    padding-top: 1rem;
   }
 
-  @media (max-width:399px) {
-    .ac-main h1 {
-      font-size: 24px !important;
-      margin-bottom:30px !important;
-    }
-  }
-  .ac-main h1 span{
-    font-size: 24px !important;
+  .section-four .planBtns {
+    margin-top: 2rem;
   }
 
-  .section-nine {   
-     margin-left: -2rem;
+  .section-four .cards_container {
+    margin-top: 2rem;
+  }
+
+  .section-four .cards {
+    padding: 1.3rem;
+  }
+
+  .section-four h4 {
+    font-size: 14px;
+  }
+
+  .section-four h6 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width:450px) {
+  .section-five {
+    margin-bottom: 1rem;
+    margin-top: 0rem;
+  }
+
+  .section-five h2 {
+    font-size: 22px;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+  .section-five .temp {
+    width: 80%;
+  }
+
+  .section-five .carousel {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:450px) {
+  .amazing_heading {
+    width: 100%;
+    font-size: 22px !important;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem !important;
+  }
+
+  .grab_offer {
+    font-size: 14px;
+    width: 80%;
+  }
+
+  .buy_course {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .percentage {
+    font-size: 2rem !important;
+    display: inline;
+  }
+
+  .off {
+    position: relative;
+    display: inline;
+    margin-left: 4px;
+  }
+
+  .amazing_career {
+    width: calc(100% + 120px);
+    margin-left: -60px;
+  }
+}
+
+@media (max-width:450px) {
+  .section-seven h2 span {
+    font-size: 22px;
+  }
+
+  .section-seven h2 {
+    font-size: 22px;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  .section-seven .plans {
+    margin: 1rem auto;
+  }
+
+  .section-seven div h4 {
+    font-size: 22px;
+  }
+
+  .section-seven div h6 {
+    font-size: 18px;
+  }
+
+  .section-seven .description {
+    font-size: 14px;
+    padding: 0px 2rem 0 2rem;
+  }
+
+  .section-seven .description p {
+    line-height: 35px;
+  }
+
+  .section-seven button {
+    font-size: 14px;
+  }
+  .buy_course_box {
+    padding: 1rem 1.2rem;
+  }
+}
+
+@media (max-width:450px) {
+  .ac-main h1 {
+    margin-top: 1rem !important;
+    font-size: 22px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .ac-main h1 span {
+    font-size: 22px !important;
+  }
+
+  .section-nine {
+    margin-left: -2rem;
     margin-right: -2rem;
   }
+
   .section-four .planBtns button {
     font-size: 12px;
     padding: 0.2rem 0.4rem;
     width: 90px;
-}
-.accordion {
-margin:8px !important;
-}
-.accordion-item-header {
-  font-size: 13px;
-  
-}
-.accordion-item-body-content {
-  font-size: 12px;
-  text-align: center;
-}
-}
+  }
 
+  .accordion {
+    margin: 8px !important;
+  }
 
+  .accordion-item-header {
+    font-size: 12px;
+
+  }
+
+  .accordion-item-body-content {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .section-nine {
+    margin-bottom: 2rem;
+  }
+}
