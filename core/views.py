@@ -8,6 +8,7 @@ from course.models import CourseCategory
 from django.contrib.auth import authenticate, login, logout
 from .models import GetInTouch
 from .forms import GetInTouchForm
+from userauths.models import Dashboard_User
 
 # def index(request):
 
@@ -25,7 +26,13 @@ from .forms import GetInTouchForm
 def index(request):
     categories = CourseCategory.objects.all()
     user = request.user
-    return render(request, 'index.html',{'is_index_page': True, 'categories': categories, 'user':user})
+    if request.user.is_authenticated:
+        user = User.objects.get(username=user)  
+        dash_user = Dashboard_User.objects.get(user_id=user.id)
+        photo = dash_user.photo
+        return render(request, 'index.html',{'is_index_page': True, 'categories': categories, 'user':user, 'photo':photo})
+    else:
+        return render(request, 'index.html',{'is_index_page': True, 'categories': categories, 'user':user})
 
 
 def career(request):
