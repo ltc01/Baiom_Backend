@@ -27,8 +27,11 @@ def index(request):
     categories = CourseCategory.objects.all()
     user = request.user
     if request.user.is_authenticated:
-        user = User.objects.get(username=user)  
-        dash_user = Dashboard_User.objects.get(user_id=user.id)
+        auser = User.objects.get(username=user)  
+        if not Dashboard_User.objects.filter(user_id=auser.id).exists():
+            dashboard_user, created = Dashboard_User.objects.get_or_create(user=auser)
+            dashboard_user.save()
+        dash_user = Dashboard_User.objects.get(user_id=auser.id)
         photo = dash_user.photo
         return render(request, 'index.html',{'is_index_page': True, 'categories': categories, 'user':user, 'photo':photo})
     else:
