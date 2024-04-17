@@ -1,13 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
- document.getElementById("profile-dropdown").style.display = "none";
-   function profileButton() {
-     if (document.getElementById("profile-dropdown").style.display != "none") {
-       document.getElementById("profile-dropdown").style.display = "none";
+ var profile = document.getElementById("profile-dropdown");
+ window.addEventListener("click",() => {
+   profile.style.display = "none";
+ })
+   function profileButton(event) {
+     event.stopPropagation();
+     if (profile.style.display != "none") {
+      profile.style.display = "none";
      } else {
-       document.getElementById("profile-dropdown").style.display = "revert";
+      profile.style.display = "revert";
      }
    }
-   document
-     .getElementById("profile-btn")
-     .addEventListener("click", profileButton);
+   var profile_btn = document.getElementById("profile-btn")
+   profile_btn.addEventListener("click", profileButton);
  });
