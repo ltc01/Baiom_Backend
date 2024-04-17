@@ -29,6 +29,7 @@
 #profile-content {
   font-size: 16px;
   border-radius: 12px;
+  box-shadow: 2px 4px 4px grey; 
   display: flex;
   flex-direction: column;
   justify-content: center;
