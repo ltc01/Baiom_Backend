@@ -65,36 +65,42 @@ document.querySelectorAll(".nav-courses-list>li").forEach((listItem)=>{
     
 })
 
+document.addEventListener("DOMContentLoaded",()=>{
 
-// Adding subdropdown of company dropdown
-const companyDropdownMenu = document.querySelector("#company")
-const companyItemsDropdown = document.querySelector("#company-items")
-const courseDropdown = document.querySelector("#courseDropdown")
-const courseItems = document.querySelector("#course-items")
-
-companyDropdownMenu.addEventListener("click", ()=>{
-  console.log("hello hi bye bye")
-
-  if(companyItemsDropdown.style.display !== "block"){
-    courseItems.style.display = "none";
-    companyItemsDropdown.style.display = "block";
-  }else{
+  // Adding subdropdown of company dropdown
+  const companyDropdownMenu = document.querySelector("#company")
+  const companyItemsDropdown = document.querySelector("#company-items")
+  const courseDropdown = document.querySelector("#courseDropdown")
+  const courseItems = document.querySelector("#course-items")
+  window.addEventListener("click",()=>{
     companyItemsDropdown.style.display = "none";
-  }
-
+    courseItems.style.display = "none";
+  })
+  companyDropdownMenu.addEventListener("click", (event)=>{
+    event.stopPropagation()
+    if(companyItemsDropdown.style.display !== "block"){
+      courseItems.style.display = "none";
+      companyItemsDropdown.style.display = "block";
+    }else{
+      companyItemsDropdown.style.display = "none";
+    }
+  
+  })
+  
+  // Course dropdown
+  
+  courseDropdown.addEventListener("click", (event)=>{
+    event.stopPropagation()
+    if(courseItems.style.display !== "block"){
+      companyItemsDropdown.style.display = "none";
+      courseItems.style.display = "block";
+    }else{
+      courseItems.style.display = "none";
+    }
+  
+  })
 })
 
-// Course dropdown
-
-courseDropdown.addEventListener("click", ()=>{
-  if(courseItems.style.display !== "block"){
-    companyItemsDropdown.style.display = "none";
-    courseItems.style.display = "block";
-  }else{
-    courseItems.style.display = "none";
-  }
-
-})
 
 
 // navbarCoursesDropdownMenu.onclick = ()=>{
