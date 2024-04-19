@@ -10,7 +10,16 @@ header {
 .navbar {
   padding: 0px 6px 0px 6px;
 }
-
+.navbar-brand img{
+  position: relative;
+  right: 10% !important;
+}
+@media (min-width:770px) {
+  .navbar-brand img{
+    position: relative;
+    right: 50% !important;
+  }
+}
 a {
   text-decoration: none;
 }

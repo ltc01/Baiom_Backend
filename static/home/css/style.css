@@ -3276,3 +3276,83 @@ list
 
 }
 
+@media (min-width:300px) and (max-width:450px){
+  .home-section .row .col-md-6:not(.infoimg) {
+    padding: 0rem 1rem 1rem !important;
+  }
+  .home-section .row h2 {
+    font-size: 25px;
+    margin-top: 6rem;
+  }
+  .home-section .row img {
+    padding-top: 20px !important;
+  }
+  #baoiam_heading{
+    margin-top: 1rem; 
+  }
+  .home-section .row .col-sm-12.h2-dec p {
+    margin-top: 0rem !important;
+    line-height: 22px;
+  }
+  #ions_info{
+    display:flex;
+    flex-direction: row;
+  }
+  #baoiam_ions {
+    width: 175px !important;
+    position: relative;
+    bottom: 9vh !important;
+    right: 4vh !important;
+  }
+  .infoimg {
+    padding-top: 8%;
+    margin-left: 0%; 
+    position: relative;
+    bottom: 7vh !important;
+    text-align: center !important;
+  }
+  section.startups h5 {
+    padding-top: 0px;
+  }
+  
+  .boxes{
+    position: relative;
+    bottom: 5vh !important;
+  }
+  .home-section .row p:not(.about-slide) {
+    padding-bottom: 0px !important;
+  }
+  .section-3 .horizon .check {
+    padding-left: 20px !important;
+    padding-top: 12px !important;
+  }  
+  #cont-us{
+    font-weight: 700;
+  }
+  .card-body .card-title {
+    font-size: 1.2rem;
+  }
+  .card-body .card-subtitle {
+    font-size: 0.9rem;
+  }  
+  .card-body .card-text {
+    font-size: 0.8rem;
+  }
+  section.work {
+    padding: 3rem 20px 3rem;
+  }
+  .nav.nav-pills p {
+    font-size: 14px !important;
+  }
+  
+}
+
+@media (min-width:390px) and (max-width:450px){
+   #info-img,#info-img2,#info-img3{
+    position: relative !important;
+    right: 6% !important;
+   }
+   #baoiam_ions {
+    right: 2vh !important;
+  }
+}
