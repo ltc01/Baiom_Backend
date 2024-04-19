@@ -21,6 +21,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import Course, CourseCategory, Batch
 from .serializers import CourseSerializer, CourseCategorySerializer, BatchSerializer, CourseCarriculumSerializer
 from django.views.decorators.csrf import csrf_exempt
+from django.contrib.auth.models import User
 
 
 
@@ -43,8 +44,10 @@ def category_courses(request, category_id):
     if user.is_authenticated:
         dash_user, created = Dashboard_User.objects.get_or_create(user=user)
         enrolled_courses = dash_user.enrolled_courses.all()
+        auser = User.objects.get(username=user)  
+        dash_user = Dashboard_User.objects.get(user_id=auser.id)
+        photo = dash_user.photo
       
-        
         return render(request, 'course.html', {
             'is_category': True,
             'courses': courses,
@@ -55,6 +58,7 @@ def category_courses(request, category_id):
             'subscription_course_plans':subscription_course_plans,
             'testimonials': testimonials,
             'program_overview':program_overview,
+            'photo':photo
         })
     else:
         return render(request, 'course.html', {
