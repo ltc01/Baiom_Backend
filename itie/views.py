@@ -28,7 +28,10 @@ def itie(request):
     courses = ICourse.objects.all()
     testimonials = testimonial.objects.all()
     countdown = CountDown.objects.first()
-    countdown_date = countdown.countdown_date
+    if countdown:
+        countdown_date = countdown.countdown_date
+    else:
+        countdown_date = None
     categories = CourseCategory.objects.all()
     i_plans = SubscriptionPlanItie.objects.filter(active=True)
     user = request.user

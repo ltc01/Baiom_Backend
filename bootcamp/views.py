@@ -32,7 +32,10 @@ def BootCamp(request):
     testimonials = testimonial.objects.all()
     categories = CourseCategory.objects.all()
     countdown = CountDown.objects.first()
-    countdown_date = countdown.countdown_date
+    if countdown:
+        countdown_date = countdown.countdown_date
+    else:
+        countdown_date = None
     user = request.user
     if request.user.is_authenticated:
         auser = User.objects.get(username=user)  
