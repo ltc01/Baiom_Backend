@@ -373,9 +373,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             <div class="content-box">
                                 <div class="content">
                                     <div class="slide-name">{{ plan.subscription_plan.name }}</div>
-                                    <div class="temp">{{ plan.course.title }}</div>
+                                    <div class="temp">{{ plan.subscription_plan.description }}</div>
                                     <div class="price">{{ plan.subscription_plan.price }}/Full course</div>
-                                    {% if plan.subscription_plan.name == "Plus" %}
+                                    <ul class="course-content">
+                                      <li>{{ plan.course_features|linebreaks }}</li>
+                                    </ul>
+                                    <!-- {% if plan.subscription_plan.name == "Plus" %}
                                         <ul class="course-content">
                                             <li>{{ plan.course_features|linebreaks }}</li>
                                         </ul>
@@ -396,7 +399,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                         <ul class="course-content">
                                         <li>{{ plan.course_features|linebreaks }}</li>
                                         </ul>
-                                    {% endif %}
+                                    {% endif %} -->
                                     <div  >
                                     <form id="enroll-form" class="courses-enroll-btn" method="post" action="/subscription/create_purchase_record/">
                                       {% csrf_token %}

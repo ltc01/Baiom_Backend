@@ -5,6 +5,7 @@ from .models import Contact
 from userauths.models import Dashboard_User
 from django.contrib.auth.models import User
 
+
 def contactus(request):
     categories = CourseCategory.objects.all()
     if request.method == 'POST':
@@ -13,13 +14,11 @@ def contactus(request):
         phone = request.POST.get('number')
         message = request.POST.get('msg')
         course = request.POST.get('course')
-
         if name and email and phone and message and course != "Courses":
             contact_obj = Contact(name=name, email=email, phone=phone, course=course, content=message)
             contact_obj.save()
             messages.success(request, "Thank you for contacting us!")
             return redirect("contactapp:contactus")
-
         else:
             messages.error(request, "All fields are required")
             return redirect("contactapp:contactus")
