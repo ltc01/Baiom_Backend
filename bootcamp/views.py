@@ -27,7 +27,6 @@ def BootCamp(request):
         contact_obj = Contact(name=name_,email=email_,mobile=mobile_,profession=profession_)
         contact_obj.save()
         messages.success(request,'thank you for contacting us')
-
     subscription_plans_bootcamp = SubscriptionPlanBootcamp.objects.filter(active = True)
     courses = BootCourse.objects.all()
     testimonials = testimonial.objects.all()
@@ -39,6 +38,8 @@ def BootCamp(request):
         photo = dash_user.photo
         return render(request,'wep.html',{'courses':courses , 'testimonials':testimonials, 'categories':categories,'subscription_plans_bootcamp':subscription_plans_bootcamp,'photo':photo})
     return render(request,'wep.html',{'courses':courses , 'testimonials':testimonials, 'categories':categories,'subscription_plans_bootcamp':subscription_plans_bootcamp})
+
+
 class DownloadFileView(View):
     def get(self,request, *args, **kwargs):
         bootcamp = get_object_or_404(BootCourse,is_wep_main =True)
