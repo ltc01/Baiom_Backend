@@ -11,7 +11,7 @@ from .models import Contact
 from .serializers import BootCourseSerializer, TestimonialSerializer, BootBatchSerializer
 from rest_framework import generics
 from subscription.models import SubscriptionPlanBootcamp
-from .models import BootCourse , BootBatch 
+from .models import BootCourse , BootBatch , CountDown
 from userauths.models import Dashboard_User
 from django.contrib.auth.models import User
 
@@ -31,13 +31,15 @@ def BootCamp(request):
     courses = BootCourse.objects.all()
     testimonials = testimonial.objects.all()
     categories = CourseCategory.objects.all()
+    countdown = CountDown.objects.first()
+    countdown_date = countdown.countdown_date
     user = request.user
     if request.user.is_authenticated:
         auser = User.objects.get(username=user)  
         dash_user = Dashboard_User.objects.get(user_id=auser.id)
         photo = dash_user.photo
-        return render(request,'wep.html',{'courses':courses , 'testimonials':testimonials, 'categories':categories,'subscription_plans_bootcamp':subscription_plans_bootcamp,'photo':photo})
-    return render(request,'wep.html',{'courses':courses , 'testimonials':testimonials, 'categories':categories,'subscription_plans_bootcamp':subscription_plans_bootcamp})
+        return render(request,'wep.html',{'courses':courses , 'testimonials':testimonials, 'categories':categories,'subscription_plans_bootcamp':subscription_plans_bootcamp,'photo':photo,'countdown_date':countdown_date})
+    return render(request,'wep.html',{'courses':courses , 'testimonials':testimonials, 'categories':categories,'subscription_plans_bootcamp':subscription_plans_bootcamp,'countdown_date':countdown_date})
 
 
 class DownloadFileView(View):
