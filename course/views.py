@@ -24,7 +24,6 @@ from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.models import User
 
 
-
 # @login_required(login_url='/userauths/login/')
 def category_courses(request, category_id):
     category = get_object_or_404(CourseCategory, id=category_id)
@@ -37,17 +36,14 @@ def category_courses(request, category_id):
     carriculum = course.curriculum.all()
     subscription_course_plans = SubscriptionPlanCourse.objects.filter(course=course)
     program_overview = course.program_overview.split('\n') if course.program_overview else []
-
     print(f"subscription_course_plans: {subscription_course_plans}")
-    
     user = request.user
     if user.is_authenticated:
         dash_user, created = Dashboard_User.objects.get_or_create(user=user)
         enrolled_courses = dash_user.enrolled_courses.all()
         auser = User.objects.get(username=user)  
         dash_user = Dashboard_User.objects.get(user_id=auser.id)
-        photo = dash_user.photo
-      
+        photo = dash_user.photo 
         return render(request, 'course.html', {
             'is_category': True,
             'courses': courses,
@@ -72,6 +68,8 @@ def category_courses(request, category_id):
             'testimonials': testimonials,
             'program_overview':program_overview,})
 
+
+
 @api_view(['GET'])
 @csrf_exempt
 def category_courses_json(request, category_id):
@@ -81,8 +79,7 @@ def category_courses_json(request, category_id):
     course = Course.objects.get(id=category_id)
     batches = Batch.objects.get(course=course)
     carriculum = course.curriculum.all()
-    subscription_course_plans = SubscriptionPlanCourse.objects.filter(course=course)
-    
+    subscription_course_plans = SubscriptionPlanCourse.objects.filter(course=course)  
     course_serializer = CourseSerializer(courses, many=True)
     categories_serializer = CourseCategorySerializer(categories, many=True)
     batch_serializer = BatchSerializer(batches)
@@ -108,8 +105,7 @@ def category_courses_json(request, category_id):
 #     carriculum = course.curriculum.all()
 #     subscription_course_plans = SubscriptionPlanCourse.objects.filter(course=course)
 #     print(f"subscription_course_plans: {subscription_course_plans}")
-#     enrolled_courses = dash_user.enrolled_courses.all()
-    
+#     enrolled_courses = dash_user.enrolled_courses.all()   
 #     # Prepare data for response
 #     user = request.user
 #     if user.is_authenticated:
@@ -120,7 +116,6 @@ def category_courses_json(request, category_id):
 #         categories_serializer = CourseCategorySerializer(categories, many=True)
 #         batch_serializer = BatchSerializer(batches)
 #         course_carriculum_serializer = CourseCarriculumSerializer(carriculum, many=True)
-
 #         data = {
 #             'is_category': True,
 #             'courses': course_serializer.data,
@@ -170,8 +165,7 @@ def category_courses_json(request, category_id):
 #         'courses': course_serializer.data,
 #         'category': course_category_serializer.data,
 #         'batch':batch_serializer.data,
-#     }
-    
+#     }   
 #     return Response(data)
 
 

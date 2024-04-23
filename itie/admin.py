@@ -5,6 +5,7 @@ from .models import ICourse, IBatch
 from .models import testimonial
 from .models import Contact
 from import_export.admin import ImportExportModelAdmin
+from .models import CountDown
 
 
 class ICourseAdmin(ImportExportModelAdmin,admin.ModelAdmin):
@@ -20,3 +21,4 @@ admin.site.register(ICourse, ICourseAdmin)
 admin.site.register(IBatch, IBatchAdmin)
 admin.site.register(testimonial,testimonialAdmin)
 admin.site.register(Contact)
+admin.site.register(CountDown)

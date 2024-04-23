@@ -7,3 +7,4 @@ course/__pycache__
 *.pyc
 .gitignore
 .gitignore
+bootcamp/__pycache__

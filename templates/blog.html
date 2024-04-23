@@ -76,8 +76,9 @@
                 </h2>
                 
                 <p class="description">
-                  {{ category.description }}
-                  
+                  {{ category.description|truncatewords:10 }}
+                      <a href="{% url 'blog:post_list_by_category' category.id %}" class="course_btn">
+                  <span>Read More</span></a>
                 </p>
                 {% endif %}
 
@@ -85,8 +86,6 @@
                   <br />
                 </div> -->
 
-                <a href="{% url 'blog:post_list_by_category' category.id %}" class="course_btn">
-                  <span>Read More</span></a>
               </div>
             </div>
           </div>
