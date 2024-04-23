@@ -69,3 +69,8 @@ class Contact(models.Model):
     
     def __str__(self):
         return self.name
+
+class CountDown(models.Model):
+    countdown_date = models.DateTimeField()
+
+  
