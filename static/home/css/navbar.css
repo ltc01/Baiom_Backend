@@ -10,7 +10,21 @@ header {
 .navbar {
   padding: 0px 6px 0px 6px;
 }
+.navbar-brand img{
+  position: relative;
+  right: 10% !important;
+}
 
+.navbar-light .navbar-nav .nav-link :hover {
+  color: black !important;
+
+}
+@media (min-width:770px) {
+  .navbar-brand img{
+    position: relative;
+    right: 50% !important;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -144,4 +158,22 @@ header .navbar-nav {
 #company, #courseDropdown, .nav-link{
   cursor: pointer;
   text-wrap: nowrap;
+}
+
+@media(max-width:450px){
+
+  header .nav-item {
+    padding:0.2rem 0rem !important;
+    gap: 0px;
+    padding-bottom: 0.6rem;
+  }
+  header .navbar-nav {
+    padding:0px !important;
+    padding: 1rem 0px !important;
+    box-shadow: 3px 3px 4px 2px #bcb4b4
+}
+
+.nav-item .btn-1{
+  margin-left: 0px !important;
+}
 }

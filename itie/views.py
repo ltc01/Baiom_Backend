@@ -9,6 +9,9 @@ from django.http import HttpResponse
 from django.views import View
 from django.shortcuts import  get_object_or_404
 from subscription.models import SubscriptionPlanItie
+from userauths.models import Dashboard_User
+from django.contrib.auth.models import User
+from itie.models import CountDown
 
 # Create your views here.
 
@@ -24,14 +27,34 @@ def itie(request):
         messages.success(request,'thank you for contacting us')
     courses = ICourse.objects.all()
     testimonials = testimonial.objects.all()
+    countdown = CountDown.objects.first()
+    if countdown:
+        countdown_date = countdown.countdown_date
+    else:
+        countdown_date = None
     categories = CourseCategory.objects.all()
     i_plans = SubscriptionPlanItie.objects.filter(active=True)
+    user = request.user
+    if request.user.is_authenticated:
+        auser = User.objects.get(username=user)  
+        dash_user = Dashboard_User.objects.get(user_id=auser.id)
+        photo = dash_user.photo
+        return render(request,'ITIE.html',
+                  {'is_itie': True, 
+                   'courses':courses , 
+                   'testimonials':testimonials, 
+                   'categories':categories,
+                   'i_plans':i_plans,
+                   'photo':photo,
+                   'countdown_date':countdown_date
+                   })
     return render(request,'ITIE.html',
                   {'is_itie': True, 
                    'courses':courses , 
                    'testimonials':testimonials, 
                    'categories':categories,
-                   'i_plans':i_plans
+                   'i_plans':i_plans,
+                   'countdown_date':countdown_date
                    })
 
 class DownloadFileView(View):

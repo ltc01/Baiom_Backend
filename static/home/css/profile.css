@@ -6,11 +6,16 @@
   height: 50px;
   border-radius: 50%;
   background-size: contain;
-  background-image: url("https://imgs.search.brave.com/bBwjQS6d54TnFs1zTzunF8dKE8Ftkr0QB4qUbRMJJYQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/YmhhZ3dhbmtpcGhv/dG9zLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOC8xMi9Q/YXdhbnN1dC1IYW51/bWFuYS1QaG90by1J/bWFnZS1IRC5qcGc");
-  box-shadow: 2px 4px 4px grey;
+  box-shadow: 2px 4px 4px grey; 
   border: 3px solid white;
 }
-
+.profile-btn img {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 50% !important;
+  position: fixed !important;
+  filter: drop-shadow(2px 2px 4px grey);
+}
 #profile {
   height: 65px;
 }
@@ -24,6 +29,7 @@
 #profile-content {
   font-size: 16px;
   border-radius: 12px;
+  box-shadow: 2px 4px 4px grey; 
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -43,7 +43,7 @@
             <div class="home-btn">
               <!-- <button class="btn-1">Get Started</button> -->
               {% comment %} {% endcomment %}
-              <a><button class="btn-2">Explore Our Courses</button></a>
+              <!-- <a><button class="btn-2" id="btn-2">Explore Our Courses</button></a> -->
             </div>
           </div>
 
@@ -74,7 +74,7 @@
             </p>
             <div class="home-btn">
               <!-- <button class="btn-1">Get Started</button> -->
-              <button class="btn-2">Explore Our Courses</button>
+              <!-- <button class="btn-2">Explore Our Courses</button> -->
             </div>
           </div>
 
@@ -102,7 +102,7 @@
             </p>
             <div class="home-btn">
               <!-- <button class="btn-1">Get Started</button> -->
-              <button class="btn-2">Explore Our Courses</button>
+              <!-- <button class="btn-2">Explore Our Courses</button> -->
             </div>
           </div>
           <div class="col-md-6 col-sm-12 laptop align-center">
@@ -222,7 +222,7 @@
                         class="fa-solid fa-hand-point-right orange-color"
                         style="color: #757575"
                       ></i>
-                      <span class="underline">Contact Us</span></a
+                      <span class="underline" id="cont-us">Contact Us</span></a
                     >
                   </div>
                 </div>
@@ -284,7 +284,7 @@
           Reinvent your career with product management course
         </p>
       </div>
-      <a href="#" class="btn-1 btn0001" style="border-radius: 50px"
+      <a href="{% url 'course:category_courses' category_id=6 %}" class="btn-1 btn0001" style="border-radius: 50px"
         ><span>Read More</span></a
       >
     </div>
@@ -301,10 +301,10 @@
         <h6 class="card-subtitle">
           <i class="fa-solid fa-link mr-1 orange-color"></i>Business Ideas
         </h6>
-        <h5 class="card-title">SAP FICO</h5>
+        <h5 class="card-title">Data Analytics</h5>
         <p class="card-text">Explore the field of data processing</p>
       </div>
-      <a href="#" class="btn-1 btn0001" style="border-radius: 50px"
+      <a href="{% url 'course:category_courses' category_id=5 %}" class="btn-1 btn0001" style="border-radius: 50px"
         ><span>Read More</span></a
       >
     </div>
@@ -861,14 +861,14 @@
             <img src="{% static 'home/img/slide1.png' %}" alt=""  id="baoiam_ions_head"/>
           </div>
           <div class="col-md-6 col-sm-12 h2-dec">
-            <h2 class="heading2">
+            <h2 class="heading2"  id="baoiam_heading">
               BAOIAM <span class="heading2 heading2_underline">'IONS.</span>
             </h2>
             <br />
-            <p class="above-quote">
+            <p class="above-quote" id="above-quote">
               Customer feedback is really a boost for improving the quality of
               courses with time. Let's see how our learners transformed their
-              career jouney after learning with us.
+              career jouney after learning with us.<br>
             </p>
             <p class="quote">
               <span class="special">❝</span>I am elated to share that I got
@@ -884,7 +884,7 @@
             <div class="col-md-2 col-sm-4 col-6">
               <img src="{% static 'home/img/slide1.png' %}" alt=""  id="baoiam_ions"/>
             </div>
-            <div class="col-md-6 infoimg">
+            <div class="col-md-6 infoimg" id="info-img">
               <h5>Apurva Kulpe</h5>
               <p class="about-slide">Risk Consultant PwC</p>
               <p class="about-slide">9 LPA CTC</p>
@@ -900,14 +900,14 @@
             <img src="{% static 'home/img/slide2.png' %}" alt=""  id="baoiam_ions_head"/>
           </div>
           <div class="col-md-6 col-sm-12 h2-dec">
-            <h2 class="heading2">
+            <h2 class="heading2"  id="baoiam_heading">
               BAOIAM <span class="heading2 heading2_underline">'IONS.</span>
             </h2>
             <br />
             <p>
               Customer feedback is really a boost for improving the quality of
               courses with time. Let's see how our learners transformed their
-              career jouney after learning with us.
+              career jouney after learning with us.<br>
             </p>
             <p class="quote">
               <span class="special">❝</span>I am elated to share that I got
@@ -923,7 +923,7 @@
             <div class="col-md-2 col-sm-4 col-6 active">
               <img src="{% static 'home/img/slide2.png' %}" alt=""  id="baoiam_ions"/>
             </div>
-            <div class="col-md-6 infoimg">
+            <div class="col-md-6 infoimg" id="info-img2">
               <h5>Ritesh Rana</h5>
               <p class="about-slide">Software Developer (Byjus)</p>
               <p class="about-slide">9 LPA CTC</p>
@@ -939,7 +939,7 @@
             <img src="{% static 'home/img/slide2.png' %}" alt=""  id="baoiam_ions_head"/>
           </div>
           <div class="row-heading col-md-6 col-sm-12 h2-dec">
-            <h2 class="heading2">
+            <h2 class="heading2"  id="baoiam_heading">
               BAOIAM <span class="heading2 heading2_underline">'IONS.</span>
             </h2>
             <br />
@@ -947,7 +947,7 @@
               Customer feedback is really a boost for improving the quality of
               courses with time. Let's see how our learners transformed their
               career jouney after learning with us.
-            </p>
+            </p><br>
             <p class="quote">
               <span class="special">❝</span>I am elated to share that I got
               placed as a Risk Consultant at PWC with a package of 9 LPA. I
@@ -962,7 +962,7 @@
             <div class="col-md-2 col-sm-4 col-6">
               <img src="{% static 'home/img/slide2.png' %}" alt=""  id="baoiam_ions"/>
             </div>
-            <div class="col-md-6 infoimg">
+            <div class="col-md-6 infoimg" id="info-img3">
               <h5>Padi Akhil</h5>
               <p class="about-slide">Associate Software Engineer EY</p>
               <p class="about-slide">18 LPA CTC</p>
@@ -1053,7 +1053,7 @@
   <div class="wrapper">
     <div class="row">
       <div class="col-lg-12 mt-5">
-        <h5>
+        <h5 id="we_are">
           We are associated with businesses and non-profits
           <span>from startups to MNC's</span>
         </h5>

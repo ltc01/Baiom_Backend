@@ -2066,7 +2066,8 @@ footer p {
     left:5%;
   }
   .buy_course {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    font-size: 14px;
    }
   .section-three .divide {
     position: relative;
@@ -2157,6 +2158,12 @@ footer p {
     position: relative;
     bottom: 4vh !important;
   }
+  .course-content {
+    line-height: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0px;
+  }
+
   .Right-course {
     margin-top: -10%;
   }
@@ -2201,12 +2208,18 @@ footer p {
 
   .amazing_heading {
     width: 100%;
-    font-size: 24px;
+    font-size: 22px;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .grab_offer {
+    font-size: 20px;
   }
 
   .buy_course_box {
     padding: 0.8rem 1.2rem;
-    height: 16vh !important;
+    height: 12vh !important;
   }
 
   .percentage,
