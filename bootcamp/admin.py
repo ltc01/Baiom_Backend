@@ -3,6 +3,7 @@ from .models import Contact
 from .models import BootCourse, BootBatch
 from .models import testimonial
 from import_export.admin import ImportExportModelAdmin
+from .models import CountDown
 
 
 class BootCourseAdmin(ImportExportModelAdmin,admin.ModelAdmin):
@@ -22,3 +23,4 @@ admin.site.register(BootCourse, BootCourseAdmin)
 admin.site.register(BootBatch, BootBatcheAdmin)
 admin.site.register(testimonial,testimonialAdmin)
 admin.site.register(Contact,ContactAdmin)
+admin.site.register(CountDown)
