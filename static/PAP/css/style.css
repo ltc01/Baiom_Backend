@@ -1,8 +1,8 @@
-body {
+/* body {
   padding: 0;
   margin: 0;
   width: fit-content;
-}
+} */
 
 * {
   margin: 0;
@@ -661,7 +661,7 @@ footer .contact-us p div i {
     font-size: 1.8rem;
   }
   .first-half img {
-    width: 150vw;
+    width: 90vw;
   }
   .second-half h1 {
     line-height: 4.3rem;
