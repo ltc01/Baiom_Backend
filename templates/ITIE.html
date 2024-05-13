@@ -1,11 +1,9 @@
 {% extends 'base.html' %} {% load static %} {% block content %}
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -23,7 +21,7 @@
   <title>Document</title>
 </head>
 
-<body>
+<body> -->
   <form class="popup-form" id="popup-form" action="{% url 'itie:itie' %}" method="post">
     {% csrf_token %}
     <div class="popup-form-content">
@@ -441,7 +439,7 @@
 
     <script>
       // Set the target date for the deal expiration
-      const targetDate = new Date("April 5, 2024 23:59:59").getTime();
+      const targetDate = new Date("{{ countdown_date|date:'F d, Y H:i:s' }}").getTime();
 
       // Update the countdown every second
       const countdown = setInterval(function () {
@@ -768,7 +766,7 @@
       }
     }
   </script>
-</body>
+<!-- </body>
 
-</html>
+</html> -->
 {% endblock content %}

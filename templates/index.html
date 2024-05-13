@@ -43,7 +43,7 @@
             <div class="home-btn">
               <!-- <button class="btn-1">Get Started</button> -->
               {% comment %} {% endcomment %}
-              <a><button class="btn-2" id="btn-2">Explore Our Courses</button></a>
+              <!-- <a><button class="btn-2" id="btn-2">Explore Our Courses</button></a> -->
             </div>
           </div>
 
@@ -74,7 +74,7 @@
             </p>
             <div class="home-btn">
               <!-- <button class="btn-1">Get Started</button> -->
-              <button class="btn-2">Explore Our Courses</button>
+              <!-- <button class="btn-2">Explore Our Courses</button> -->
             </div>
           </div>
 
@@ -102,7 +102,7 @@
             </p>
             <div class="home-btn">
               <!-- <button class="btn-1">Get Started</button> -->
-              <button class="btn-2">Explore Our Courses</button>
+              <!-- <button class="btn-2">Explore Our Courses</button> -->
             </div>
           </div>
           <div class="col-md-6 col-sm-12 laptop align-center">
@@ -284,7 +284,7 @@
           Reinvent your career with product management course
         </p>
       </div>
-      <a href="#" class="btn-1 btn0001" style="border-radius: 50px"
+      <a href="{% url 'course:category_courses' category_id=6 %}" class="btn-1 btn0001" style="border-radius: 50px"
         ><span>Read More</span></a
       >
     </div>
@@ -301,10 +301,10 @@
         <h6 class="card-subtitle">
           <i class="fa-solid fa-link mr-1 orange-color"></i>Business Ideas
         </h6>
-        <h5 class="card-title">SAP FICO</h5>
+        <h5 class="card-title">Data Analytics</h5>
         <p class="card-text">Explore the field of data processing</p>
       </div>
-      <a href="#" class="btn-1 btn0001" style="border-radius: 50px"
+      <a href="{% url 'course:category_courses' category_id=5 %}" class="btn-1 btn0001" style="border-radius: 50px"
         ><span>Read More</span></a
       >
     </div>

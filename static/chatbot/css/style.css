@@ -150,6 +150,8 @@
 @media screen and (max-width: 380px) {
   .chatbot-container {
     left: 10%;
+    z-index: 112;
+    /* position: absolute; */
   }
   .button-chatbot-less {
     left: 60%;
