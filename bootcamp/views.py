@@ -41,8 +41,8 @@ def BootCamp(request):
         auser = User.objects.get(username=user)  
         dash_user = Dashboard_User.objects.get(user_id=auser.id)
         photo = dash_user.photo
-        return render(request,'wep.html',{'courses':courses , 'testimonials':testimonials, 'categories':categories,'subscription_plans_bootcamp':subscription_plans_bootcamp,'photo':photo,'countdown_date':countdown_date})
-    return render(request,'wep.html',{'courses':courses , 'testimonials':testimonials, 'categories':categories,'subscription_plans_bootcamp':subscription_plans_bootcamp,'countdown_date':countdown_date})
+        return render(request,'wep.html',{'is_wep': True,'courses':courses , 'testimonials':testimonials, 'categories':categories,'subscription_plans_bootcamp':subscription_plans_bootcamp,'photo':photo,'countdown_date':countdown_date})
+    return render(request,'wep.html',{'is_wep': True,'courses':courses , 'testimonials':testimonials, 'categories':categories,'subscription_plans_bootcamp':subscription_plans_bootcamp,'countdown_date':countdown_date})
 
 
 class DownloadFileView(View):
