@@ -3358,7 +3358,7 @@ footer p{
     }
     }
     
-    .ac-main h1{
+    .ac-main h2{
         margin:2rem 0 4rem 0;
     }
 
@@ -3376,7 +3376,7 @@ footer p{
   
   }
   
-  .ac-main h1 {
+  .ac-main h2 {
     margin-top: 50px;
     font-size: 3rem;
     text-align: center;
@@ -3385,7 +3385,7 @@ footer p{
     margin-bottom:50px;
   }
   
-  .ac-main h1 span {
+  .ac-main h2 span {
     font-size: 3rem;
     background: -webkit-linear-gradient(45deg, #fa2424, #fb8721);
     -webkit-background-clip: text;
@@ -3424,7 +3424,7 @@ footer p{
   
   
   @media(max-width:650px){
-    .ac-main h1{
+    .ac-main h2{
       margin-top: 2rem;
     }
   }
@@ -3562,7 +3562,7 @@ footer p{
   }
   
   @media screen and (max-width:600px) {
-    .ac-main h1 {
+    .ac-main h2 {
       margin-top: 0px;
       font-size: 24px;
       text-align: center;
@@ -3570,7 +3570,7 @@ footer p{
       font-weight: bold;
     }
   
-    .ac-main h1 span {
+    .ac-main h2 span {
       font-size: 24px;
     }
   
