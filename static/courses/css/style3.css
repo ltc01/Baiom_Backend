@@ -568,18 +568,20 @@
     flex-direction: column;
     padding: 30px;
   }
+
   .topsection1-content>h1 {
     font-size: 2.5rem;
     margin-bottom: 30px;
     margin-top: 12%;
-  }  
+  }
+
   .topsection1-content {
     width: 100%;
     padding: 0;
     text-align: center;
   }
 
-  
+
   .topsection1-content>p {
     font-size: 16px;
     margin-bottom: 30px;
@@ -790,12 +792,14 @@
   font-weight: 700;
   color: rgb(3, 3, 72);
 }
-.swiper-pagination.swiper-pagination-clickable{
+
+.swiper-pagination.swiper-pagination-clickable {
   width: 80px;
   position: relative;
   bottom: 0%;
   padding-top: 2%;
 }
+
 .section-three p {
   color: #777;
   font-weight: 500;
@@ -945,12 +949,18 @@
   align-items: center;
 }
 
-.seven h1 {
+.seven h1,
+.seven h2 {
   text-align: center;
   margin: 2rem;
   font-size: 3rem;
   font-weight: bold;
   color: #040052;
+}
+
+.seven h2 {
+  font-size: 2.4rem;
+
 }
 
 .curriculum {
@@ -1813,9 +1823,10 @@ footer p {
 
   }
 }
-  .why-web-dev-box .why-web-dev h5 {
-    color: #777;
-  }
+
+.why-web-dev-box .why-web-dev h5 {
+  color: #777;
+}
 
 
 @media (min-width:770px) and (max-width:918px) {
@@ -1839,28 +1850,33 @@ footer p {
   .testimonial-heading,
   .Right-course h2,
   .amazing_heading,
-  .ac-main h1 {
+  .ac-main h2 {
     font-size: 2.2rem;
   }
 }
+
 @media (min-width:770px) and (max-width:952px) {
   .topsection1-content {
     width: 70% !important;
     padding: 0px !important;
-  }  
-  .why-web-dev div h5{
+  }
+
+  .why-web-dev div h5 {
     font-size: 1rem !important;
   }
-  #why-web-dev-heading-1{
+
+  #why-web-dev-heading-1 {
     font-size: 1.8rem;
   }
 }
+
 .popup-form-content input,
-.popup-form-content select{
+.popup-form-content select {
   box-shadow: 1.2px 1.5px 0.7px #777 !important;
-  
+
 }
-.popup-submit{
+
+.popup-submit {
   font-size: 1rem;
   font-weight: 600;
   width: 100px;
@@ -1873,46 +1889,60 @@ footer p {
   align-items: center;
   text-align: center;
 }
-@media (min-width:451px) and (max-width:1140px){
-   .first-h3{
+
+@media (min-width:451px) and (max-width:1140px) {
+  .first-h3 {
     width: 160%;
     margin-right: 20px;
-   }
-   .class-1st .first{
-    margin-left: 50%;
-   }
-   .class-1st{
-    position: relative;
-    right:15%;
-   }
+  }
 
-   .section-three {
+  .class-1st .first {
+    margin-left: 50%;
+  }
+
+  .class-1st {
+    position: relative;
+    right: 15%;
+  }
+
+  .section-three {
     margin: 3rem auto;
-   } 
-   .testimonial-heading {
+  }
+
+  .testimonial-heading {
     padding-top: 0rem;
   }
-  .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-     bottom: 0px !important;
-  }  
-  .slide-container.swiper{
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 0px !important;
+  }
+
+  .slide-container.swiper {
     margin-bottom: 3rem !important;
   }
-  .Right-course h2, .Right-course .underline{
+
+  .Right-course h2,
+  .Right-course .underline {
     font-size: 2rem !important;
   }
+
   .three .image>img {
     padding-top: 3rem;
   }
+
   .second-section-div2 h3 {
     font-size: 1.5rem;
   }
+
   .section-three {
     margin: 6rem auto;
   }
+
   .content-box {
     width: 100%;
-  }  
+  }
 }
 
 @media (max-width:450px) {
@@ -1945,42 +1975,48 @@ footer p {
   .topsection1-countpart .third {
     font-size: 22px !important;
   }
+
   .topsection1-button .interested {
     margin-bottom: 20px;
   }
 
-  .first-h3{
-    width:130%;
+  .first-h3 {
+    width: 130%;
     padding-right: 52px;
     position: relative;
     left: 10%;
   }
+
   .class-1st {
     position: relative !important;
     left: -6% !important;
-  }  
+  }
 
   .topsection1-countpart h3 {
     font-size: 12px !important;
   }
+
   .topsection1-button .interested,
-  .topsection1-button .broucher  {
+  .topsection1-button .broucher {
     width: 160px;
     font-size: 13px;
     height: 50px;
     text-align: center;
   }
+
   .topsection1-container {
     padding-bottom: 8px;
   }
+
   .topsection1-button .broucher {
     font-size: 13px !important;
     font-weight: 700;
   }
+
   .topsection1-countpart div {
     width: 150% !important;
     position: relative;
-    right:15%;
+    right: 15%;
   }
 
   .topsection1-image>img {
@@ -1991,9 +2027,11 @@ footer p {
   .topsection1-button .broucher {
     font-size: 10px !important;
   }
+
   .three .image>img {
     margin-top: 1rem;
-  }  
+  }
+
   .second-section-div2 div p {
     text-align: center;
     font-size: 11px;
@@ -2009,6 +2047,7 @@ footer p {
     font-size: 18px;
     margin-bottom: 0px !important;
   }
+
   .btn-33 {
     width: 120px;
     font-size: 14px !important;
@@ -2057,18 +2096,22 @@ footer p {
     width: 140%;
     margin-top: 7px;
   }
+
   .enroll-btn {
     font-size: 1rem;
   }
+
   .emi_box {
-    width:90% !important;
+    width: 90% !important;
     position: relative;
-    left:5%;
+    left: 5%;
   }
+
   .buy_course {
     margin-bottom: 0px;
     font-size: 14px;
-   }
+  }
+
   .section-three .divide {
     position: relative;
     right: 4%;
@@ -2083,9 +2126,13 @@ footer p {
     width: 120%;
     font-size: 24px;
   }
-  .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
     bottom: 0px !important;
-  }  
+  }
+
   .curriculum-item-header {
     font-size: 2px;
     height: 6vh !important;
@@ -2096,9 +2143,11 @@ footer p {
     font-size: 16px;
     margin-top: 12px;
   }
+
   .curriculum-item-body-content {
     font-size: 12px;
   }
+
   .testimonial-heading {
     margin: -10px !important;
     width: 100%;
@@ -2154,10 +2203,12 @@ footer p {
     font-size: 26px;
     padding-top: 0px;
   }
+
   .splide__track--draggable {
     position: relative;
     bottom: 4vh !important;
   }
+
   .course-content {
     line-height: 2.5rem;
     margin-top: 0.5rem;
@@ -2234,7 +2285,7 @@ footer p {
     margin-left: 4px;
   }
 
-  .ac-main h1,
+  .ac-main h2,
   .ac-main span {
     width: 100% !important;
     font-size: 22px !important;
@@ -2245,18 +2296,22 @@ footer p {
     position: relative;
     left: 3%;
   }
+
   .accordion {
     margin: 1.2rem 10px !important;
   }
+
   .accordion-item-header {
     font-size: 13px !important;
   }
+
   .accordion-item-body-content {
     font-size: 12px !important;
   }
-  .ac-main h1 {
+
+  .ac-main h2 {
     margin-bottom: 0rem !important;
-  }    
+  }
 }
 
 
@@ -2295,12 +2350,12 @@ footer p {
     font-size: 16px;
   }
 
-  .ac-main h1 {
+  .ac-main h2 {
     font-size: 30px !important;
     margin-top: 121px !important;
   }
 
-  .ac-main h1 span {
+  .ac-main h2 span {
     font-size: 30px !important;
   }
 
@@ -2322,5 +2377,83 @@ footer p {
 
   .accordion-item {
     width: 93%;
+  }
+}
+
+/*****/
+
+@media (min-width: 425px) and (max-width: 426px) {
+
+  .ac-main h2 {
+    font-size: 39px !important;
+    padding-top: 50px;
+  }
+}
+
+
+@media (min-width: 321px) and (max-width: 440px) {
+
+  .ac-main h2,
+  .ac-main span {
+    width: 100% !important;
+    font-size: 22px !important;
+  }
+}
+
+.ac-main h2 {
+  font-size: 3rem;
+  text-align: center;
+  color: #031864;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.ac-main h2 {
+  text-align: center !important;
+}
+
+.ac-main h2 span {
+  font-size: 45px;
+  background: -webkit-linear-gradient(45deg, #fa2424, #fb8721);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media(min-width: 0px) and (max-width: 320px) {
+  .ac-main h2 {
+    font-size: 25px !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .ac-main h2 span {
+    font-size: 25px !important;
+  }
+}
+
+@media(min-width: 441px) and (max-width: 980px) {
+  .ac-main h2 {
+    font-size: 30px !important;
+  }
+
+  .ac-main h2 span {
+    font-size: 30px !important;
+  }
+}
+
+@media (min-width: 280px) and (max-width:450px) {
+
+  .ac-main h2,
+  .ac-main span {
+    width: 100% !important;
+    font-size: 22px !important;
+  }
+}
+
+@media (min-width: 280px) and (max-width:450px) {
+  .ac-main h2 {
+    margin-bottom: 0rem !important;
+    padding-bottom: 1rem !important;
+    margin-top: -20px !important;
   }
 }

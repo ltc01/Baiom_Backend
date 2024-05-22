@@ -334,7 +334,7 @@ img {
   margin: 2rem auto;
 }
 
-.ac-main h1 {
+.ac-main h1,.ac-main h2 {
   margin-top: 20px;
   font-size: 47px;
   font-weight: bold;
@@ -344,13 +344,15 @@ img {
   margin-bottom: 4rem;
 }
 
-.ac-main h1 span {
+.ac-main h1 span,.ac-main h2 span {
   font-size: 48px;
   background: -webkit-linear-gradient(45deg, #fa2424, #fb8721);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 2px solid red;
 }
+
+
 
 .ac-main p {
   color: gray;

@@ -1477,21 +1477,22 @@ body {
   flex-direction: column;
 }
 
-.ac-main h1 {
+.ac-main h2 {
   font-size: 45px;
-  text-align: center;
+  text-align: center !important;
   color: #031864;
   font-weight: bold;
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-.ac-main h1 span {
+.ac-main h2 span {
   font-size: 45px;
   background: -webkit-linear-gradient(45deg, #fa2424, #fb8721);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center !important;
 }
 
 .accordion-item {
@@ -1804,14 +1805,16 @@ body {
 }
 
 @media (max-width:450px) {
-  .ac-main h1 {
+  .ac-main h2 {
     margin-top: 1rem !important;
     font-size: 22px !important;
     margin-bottom: 30px !important;
+    text-align: center !important;
   }
 
-  .ac-main h1 span {
+  .ac-main h2 span {
     font-size: 22px !important;
+    text-align: center !important;
   }
 
   .section-nine {

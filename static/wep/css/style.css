@@ -1201,7 +1201,7 @@ input[type="radio"] {
     gap: 1rem !important;
   }
 
-  .ac-main h1 {
+  .ac-main h2 {
     font-size: 39px !important;
     padding-top: 50px;
   }
@@ -1756,7 +1756,7 @@ input[type="radio"] {
     width: 420px !important;
     gap: 1.5rem;
   }
-  .ac-main h1,
+  .ac-main h2,
   .ac-main span {
     width: 100% !important;
     font-size: 22px !important;
@@ -1924,15 +1924,18 @@ input[type="radio"] {
   margin: 2rem auto;
 }
 
-.ac-main h1 {
+.ac-main h2 {
   font-size: 3rem;
   text-align: center;
   color: #031864;
   font-weight: bold;
   margin-top: 2rem;
 }
+.ac-main h2 {
+  text-align: center !important;
+}
 
-.ac-main h1 span {
+.ac-main h2 span {
   font-size: 45px;
   background: -webkit-linear-gradient(45deg, #fa2424, #fb8721);
   -webkit-background-clip: text;
@@ -2190,12 +2193,12 @@ input[type="radio"] {
     font-size: 30px;
   } */
 
-  .ac-main h1{
+  .ac-main h2{
     font-size: 25px !important;
     padding-bottom: 1rem !important;
   }
 
-  .ac-main h1 span{
+  .ac-main h2 span{
     font-size: 25px !important;
   }
 
@@ -2366,11 +2369,11 @@ input[type="radio"] {
     width: 29rem;
   }
 
-  .ac-main h1 {
+  .ac-main h2 {
     font-size: 30px !important;
   }
 
-  .ac-main h1 span {
+  .ac-main h2 span {
     font-size: 30px !important;
   }
 
@@ -2520,11 +2523,11 @@ input[type="radio"] {
     align-items: center;
   }
 
-  .ac-main h1{
+  .ac-main h2{
     font-size: 30px !important;
   }
 
-  .ac-main h1 span{
+  .ac-main h2 span{
     font-size: 30px !important;
   }
 
@@ -2624,7 +2627,7 @@ input[type="radio"] {
     font-family: "Montserrat", "sans-serif", "Londrina Outline";
   }
   
-  .ac-main h1,
+  .ac-main h2,
   .ac-main span {
     width: 100% !important;
     font-size: 22px !important;
@@ -2644,7 +2647,7 @@ input[type="radio"] {
   .accordion-item-body-content {
     font-size: 12px !important;
   }
-  .ac-main h1 {
+  .ac-main h2 {
     margin-bottom: 0rem !important;
     padding-bottom: 1rem !important;
     margin-top: -20px !important;
